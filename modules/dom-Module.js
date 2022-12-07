@@ -20,9 +20,17 @@ function get_hepsinitemizle_SimpleFunction() {
 function get_degistir_SimpleFunction() {
     document.getElementsByTagName("LI")[0].innerHTML = "JS";
 };
+//! getElementsByClassName(): Kendisine parametre olarak verilen değer doğrultusunda belge içerisinde belirtilen Class adına sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+function get_arkaplan_SimpleFunction() {
+    var result = document.getElementsByClassName("bicimlendirme");
+    for (var i = 0; i < result.length; i++) {
+        result[i].style.backgroundColor = "#000000";
+    }
+};
 export {
     get_SimpleFunction,
     get_hepsinisec_SimpleFunction,
     get_hepsinitemizle_SimpleFunction,
-    get_degistir_SimpleFunction
+    get_degistir_SimpleFunction,
+    get_arkaplan_SimpleFunction
 };

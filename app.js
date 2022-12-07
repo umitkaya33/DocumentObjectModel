@@ -15,3 +15,7 @@ const btnDomModule_degistir = document.getElementById('btnDomModule_degistir');
 btnDomModule_degistir.addEventListener('click', () => {
     domModule.get_degistir_SimpleFunction();
 });
+const btnDomModule_arkaplan = document.getElementById('btnDomModule_arkaplan');
+btnDomModule_arkaplan.addEventListener('click', () => {
+    domModule.get_arkaplan_SimpleFunction();
+});
