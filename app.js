@@ -19,3 +19,19 @@ const btnDomModule_arkaplan = document.getElementById('btnDomModule_arkaplan');
 btnDomModule_arkaplan.addEventListener('click', () => {
     domModule.get_arkaplan_SimpleFunction();
 });
+const btnRedBG = document.getElementById('btnRedBG');
+btnRedBG.addEventListener('click', () => {
+    domModule.redBG();
+});
+const btnBlackBG = document.getElementById('btnBlackBG');
+btnBlackBG.addEventListener('click', () => {
+    domModule.blackBG();
+});
+const btnBlueBG = document.getElementById('btnBlueBG');
+btnBlueBG.addEventListener('click', () => {
+    domModule.blueBG();
+});
+const btnGreenBG = document.getElementById('btnGreenBG');
+btnGreenBG.addEventListener('click', () => {
+    domModule.greenBG();
+});
