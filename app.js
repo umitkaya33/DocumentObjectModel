@@ -11,3 +11,7 @@ const btnDomModule_temizle = document.getElementById('btnDomModule_temizle');
 btnDomModule_temizle.addEventListener('click', () => {
     domModule.get_hepsinitemizle_SimpleFunction();
 });
+const btnDomModule_degistir = document.getElementById('btnDomModule_degistir');
+btnDomModule_degistir.addEventListener('click', () => {
+    domModule.get_degistir_SimpleFunction();
+});

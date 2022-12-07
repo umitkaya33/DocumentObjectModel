@@ -16,9 +16,13 @@ function get_hepsinitemizle_SimpleFunction() {
         values[i].checked = false;
     }
 };
-
+//! getElementsByTagName(): Kendisine parametre olarak verilen değer doğrultusunda belge içerisinde belirtilen Tag özelliğine sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+function get_degistir_SimpleFunction() {
+    document.getElementsByTagName("LI")[0].innerHTML = "JS";
+};
 export {
     get_SimpleFunction,
     get_hepsinisec_SimpleFunction,
-    get_hepsinitemizle_SimpleFunction
+    get_hepsinitemizle_SimpleFunction,
+    get_degistir_SimpleFunction
 };
