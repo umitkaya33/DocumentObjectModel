@@ -62,15 +62,17 @@
         /* compatMode : Belgenin tarayıcı tarafında hangi modda çalıştırıldığını elde etmek için kullanılır... */
         document.write("compatMode: " + document.compatMode + "<br>");
         /* defaultView: Belgenin pencere nesnesini elde etmek için kullanılır */
-        document.write("defaultView:" + document.defaultView + "<br>")
+        document.write("defaultView:" + document.defaultView + "<br>");
         /* documentURI: Belge sayfasının URI adresi referansını elde etmek için kullanılır. */
-        document.write("documentURI:" + document.documentURI + "<br>")
+        document.write("documentURI:" + document.documentURI + "<br>");
         /* location: Belge sayfasının URL adresi referansını elde etmek için kullanılır. */
         function test() {
-            document.location.href = "#top";
+            document.location.href = "#top"
         }
+        /* baseURI: Belgenin mutlak URL adresi referansını elde etmek için kullanılır. */
+        document.write("baseURI:" + document.baseURI);
     </script>
-    <button onclick="test()">Başa Dön</button>
+    <br><button onclick="test()">Başa Dön</button>
 </body>
 
 </html>
