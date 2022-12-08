@@ -38,7 +38,14 @@ function imagesFunction() {
     for (let index = 0; index < document.images.length; index++) {
         document.images[index].height = "50";
     }
-}
+};
+//! createAttribute & setAttributeNode kullanım örneği
+function linksAdd() {
+    var valueLink = document.getElementById("linkekle");
+    var features = document.createAttribute("href");
+    features.value = "http://www.google.com";
+    valueLink.setAttributeNode(features);
+};
 
 export {
     get_SimpleFunction,
@@ -48,5 +55,5 @@ export {
     get_arkaplan_SimpleFunction,
     imagesFunction,
     SetColor,
-
+    linksAdd
 };

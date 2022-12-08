@@ -41,3 +41,7 @@ const imagesSmall = document.getElementById('images_Small');
 imagesSmall.addEventListener('click', () => {
     domModule.imagesFunction();
 });
+const linksAdd = document.getElementById('btnLinksAdd');
+linksAdd.addEventListener('click', () => {
+    domModule.linksAdd();
+});
