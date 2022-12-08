@@ -28,34 +28,25 @@ function get_arkaplan_SimpleFunction() {
     }
 };
 //! body medodunun kullanımı : Belge içerisinde body tagının referansını elde etmek için kullanılır.. -->
-function redBG() {
-    document.body.style.backgroundColor = "Red";
-};
-function blackBG() {
-    document.body.style.backgroundColor = "Black";
-};
-function blueBG() {
-    document.body.style.backgroundColor = "Blue";
-};
-function greenBG() {
-    document.body.style.backgroundColor = "Green";
-};
+
+function SetColor(color) {
+    document.body.style.backgroundColor = color;
+}
+
 //! images: Belge içerisindeki img tagına sahip tüm elemanların referanslarını elde etmek için kullanılır.
 function imagesFunction() {
-    document.images[0].height = "50";
-    document.images[1].height = "50";
-    document.images[2].height = "50";
-    document.images[3].height = "50";
-};
+    for (let index = 0; index < document.images.length; index++) {
+        document.images[index].height = "50";
+    }
+}
+
 export {
     get_SimpleFunction,
     get_hepsinisec_SimpleFunction,
     get_hepsinitemizle_SimpleFunction,
     get_degistir_SimpleFunction,
     get_arkaplan_SimpleFunction,
-    redBG,
-    blackBG,
-    blueBG,
-    greenBG,
-    imagesFunction
+    imagesFunction,
+    SetColor,
+    test123
 };

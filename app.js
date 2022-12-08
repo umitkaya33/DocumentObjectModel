@@ -1,8 +1,10 @@
 import * as  domModule from "./modules/dom-Module.js";
+
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
     domModule.get_SimpleFunction();
 });
+
 const btnDomModule_sec = document.getElementById('btnDomModule_sec');
 btnDomModule_sec.addEventListener('click', () => {
     domModule.get_hepsinisec_SimpleFunction();
@@ -21,21 +23,25 @@ btnDomModule_arkaplan.addEventListener('click', () => {
 });
 const btnRedBG = document.getElementById('btnRedBG');
 btnRedBG.addEventListener('click', () => {
-    domModule.redBG();
+    domModule.SetColor('Red');
 });
 const btnBlackBG = document.getElementById('btnBlackBG');
 btnBlackBG.addEventListener('click', () => {
-    domModule.blackBG();
+    domModule.SetColor('Black');
 });
 const btnBlueBG = document.getElementById('btnBlueBG');
 btnBlueBG.addEventListener('click', () => {
-    domModule.blueBG();
+    domModule.SetColor('Blue');
 });
 const btnGreenBG = document.getElementById('btnGreenBG');
 btnGreenBG.addEventListener('click', () => {
-    domModule.greenBG();
+    domModule.SetColor('Green');
 });
 const imagesSmall = document.getElementById('images_Small');
 imagesSmall.addEventListener('click', () => {
     domModule.imagesFunction();
+});
+const imagesSmall = document.getElementById('test1234');
+imagesSmall.addEventListener('click', () => {
+    domModule.test123();
 });
