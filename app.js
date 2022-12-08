@@ -35,3 +35,7 @@ const btnGreenBG = document.getElementById('btnGreenBG');
 btnGreenBG.addEventListener('click', () => {
     domModule.greenBG();
 });
+const imagesSmall = document.getElementById('images_Small');
+imagesSmall.addEventListener('click', () => {
+    domModule.imagesFunction();
+});
