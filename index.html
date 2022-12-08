@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onclick="activeElementView()">
     <!--! getElementByID() Özelliği hakkında -->
     <button id="btnDomModule" onclick="get_SimpleFunction()">Değiştir</button>
     <div id="demo">ÜSTEKİ BUTONA TIKLANINCA BURDAKİ YAZI DEĞİŞECEK</div> <br>
@@ -83,6 +83,12 @@
         document.write("designMode:" + document.designMode + "<br>");
         /* hasFocus: Belge odağının olup olmadığını(Boolean veri türünde) elde etmek için kullanılır. */
         document.write("hasFocus:" + document.hasFocus() + "<br>");
+        /* activeElement: Belge içerisindeki seçili veya odaklanılmış elemanın referansını elde etmek için kullanılır. */
+        function activeElementView() {
+            var process = document.activeElement.innerHTML;
+            alert(process);
+        };
+
     </script>
     <button onclick="test()">Başa Dön</button>
 </body>
