@@ -50,19 +50,21 @@
 
     <script type="text/javascript" language="javascript">
         /* doctype : Belge döküman türü referansını elde etmek için kullanılır.. */
-        document.write("Belge Türü: " + document.doctype.name + "<br>");
+        document.write("doctype: " + document.doctype.name + "<br>");
         /* documentElement : HTML TAG'ının referansını element nesnesi halinde elde etmek için kullanılır... */
-        document.write("Belge Türü: " + document.documentElement.nodeName + "<br>");
+        document.write("documentElement: " + document.documentElement.nodeName + "<br>");
         /*  characterSet : Belgenin karakter kodlamısını görüntülemek için kullanılır...*/
-        document.write("Karakteri: " + document.characterSet + "<br>");
+        document.write("characterSet: " + document.characterSet + "<br>");
         /* inputEncoding : Belgenin karakter kodlamasının referansını elde etmek için kullanılır... */
-        document.write("Karakteri: " + document.inputEncoding + "<br>");
+        document.write("inputEncoding: " + document.inputEncoding + "<br>");
         /* Title : Belge içerisindeki title tagını elde etmek için kullanılır... */
         document.write("Title: " + document.title + "<br>");
         /* compatMode : Belgenin tarayıcı tarafında hangi modda çalıştırıldığını elde etmek için kullanılır... */
         document.write("compatMode: " + document.compatMode + "<br>");
         /* defaultView: Belgenin pencere nesnesini elde etmek için kullanılır */
         document.write("defaultView:" + document.defaultView + "<br>")
+        /* documentURI: Belge sayfasının URI adresi referansını elde etmek için kullanılır. */
+        document.write("documentURI:" + document.documentURI + "<br>")
     </script>
 </body>
 
