@@ -41,7 +41,3 @@ const imagesSmall = document.getElementById('images_Small');
 imagesSmall.addEventListener('click', () => {
     domModule.imagesFunction();
 });
-const imagesSmall = document.getElementById('test1234');
-imagesSmall.addEventListener('click', () => {
-    domModule.test123();
-});

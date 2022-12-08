@@ -117,6 +117,11 @@
         /* forms: Belge içerisindeki form tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. */
         var formsView = document.forms.length;
         document.getElementById("formsayisi").innerHTML = formsView;
+        /* plugins: Tarayıcıdaki tüm eklentilerin referanslarını elde etmek için kullanılır. */
+        for (var index = 0; index < navigator.plugins.length; index++) {
+            var result = navigator.plugins[index].name;
+            document.write(result + " ");
+        }
     </script>
     <button onclick="test()">Başa Dön</button>
 </body>

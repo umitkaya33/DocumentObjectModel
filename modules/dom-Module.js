@@ -48,5 +48,5 @@ export {
     get_arkaplan_SimpleFunction,
     imagesFunction,
     SetColor,
-    test123
+
 };
