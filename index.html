@@ -53,6 +53,7 @@
     <a id="css" name="JQuery" href="#">JQuery</a><br>
     Çapa Sayısı:<span id="capasayisi"></span><br>
     Link Sayısı:<span id="linksayisi"></span><br>
+    Script Sayısı:<span id="scriptsayisi"></span><br>
     <script type="text/javascript" language="javascript">
         /* doctype : Belge döküman türü referansını elde etmek için kullanılır.. */
         document.write("doctype: " + document.doctype.name + "<br>");
@@ -100,6 +101,9 @@
         /* links: Belge içerisindeki tüm linklerin referansını elde etmek için kullanılır. */
         var linksView = document.links.length;
         document.getElementById("linksayisi").innerHTML = linksView;
+        /* scripts: Belge içerisindeki script tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. */
+        var scriptsView = document.scripts.length;
+        document.getElementById("scriptsayisi").innerHTML = scriptsView;
     </script>
     <button onclick="test()">Başa Dön</button>
 </body>
