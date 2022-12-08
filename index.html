@@ -65,7 +65,12 @@
         document.write("defaultView:" + document.defaultView + "<br>")
         /* documentURI: Belge sayfasının URI adresi referansını elde etmek için kullanılır. */
         document.write("documentURI:" + document.documentURI + "<br>")
+        /* location: Belge sayfasının URL adresi referansını elde etmek için kullanılır. */
+        function test() {
+            document.location.href = "#top";
+        }
     </script>
+    <button onclick="test()">Başa Dön</button>
 </body>
 
 </html>
