@@ -52,11 +52,18 @@
         var process = document.doctype.name;
         document.write("Belge Türü: " + process);
     </script><br />
-        <!-- ! documentElement : HTML TAG'ının referansını element nesnesi halinde elde etmek için kullanılır... -->
-        <script type="text/javascript" language="javascript">
-            var process = document.documentElement.nodeName;
-            document.write("Belge Türü: " + process);
-        </script>
+    <!-- ! documentElement : HTML TAG'ının referansını element nesnesi halinde elde etmek için kullanılır... -->
+    <script type="text/javascript" language="javascript">
+        var process = document.documentElement.nodeName;
+        document.write("Belge Türü: " + process);
+    </script>
+    <br />
+    <!-- ! characterSet : Belgenin karakter kodlamısını görüntülemek için kullanılır... -->
+    <script type="text/javascript" language="javascript">
+        var process = document.characterSet;
+        document.write("Karakteri: " + process);
+    </script>
+
 </body>
 
 </html>
