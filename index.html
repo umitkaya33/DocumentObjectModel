@@ -14,7 +14,7 @@
     <button id="btnDomModule" onclick="get_SimpleFunction()">Değiştir</button>
     <div id="demo">ÜSTEKİ BUTONA TIKLANINCA BURDAKİ YAZI DEĞİŞECEK</div> <br>
     <!--! getElemensByName Özelliği hakkında -->
-    İlgi Alanlarınız. <br>
+    İlgi Alanlarınız. <br />
     Alışveriş: <input name="ilgialanlari" type="checkbox" value="Alışveriş" />
     Eğlence: <input name="ilgialanlari" type="checkbox" value="Eğlence" />
     Sinema: <input name="ilgialanlari" type="checkbox" value="Sinema" />
@@ -23,7 +23,7 @@
     İnternet: <input name="ilgialanlari" type="checkbox" value="İnternet" />
     <button id="btnDomModule_sec" onclick="get_hepsinisec_SimpleFunction()">Hepsini Seç</button>
     <button id="btnDomModule_temizle" onclick="get_hepsinitemizle_SimpleFunction()">Tümünü Temizle</button>
-    <br>
+    <br />
     <!-- ! getElementsByTagName() Özelliği Hakkında -->
     <ul>
         <li>Html</li>
@@ -33,7 +33,7 @@
         <li>Jquery</li>
     </ul>
     <button id="btnDomModule_degistir" onclick="get_degistir_SimpleFunction()">HTML olanı JS olarak değiştir</button>
-    </br> </br>
+    <br /><br />
     <div class="bicimlendirme">Javascript Eğitim Seti</div>
     <div class="bicimlendirme">Php Eğitim Seti</div>
     <div class="bicimlendirme">Html Eğitim Seti</div>
@@ -41,13 +41,17 @@
     <div class="bicimlendirme">Xml Eğitim Seti</div>
     <div class="bicimlendirme">JQuery Eğitim Seti</div>
     <button id="btnDomModule_arkaplan" onclick="get_arkaplan_SimpleFunction()">Arkaplan Değiştir</button>
-    </br></br></br>
+    <br />
 
     <button id="btnRedBG" onclick="redBG()">KIRMIZI</button>
     <button id="btnBlackBG" onclick="blackBG()">SİYAH</button>
     <button id="btnBlueBG" onclick="blueBG()">MAVİ</button>
-    <button id="btnGreenBG" onclick="greenBG()">YEŞİL</button>
-
+    <button id="btnGreenBG" onclick="greenBG()">YEŞİL</button> <br /><br />
+    <!-- ! doctype : Belge döküman türü referansını elde etmek için kullanılır.. -->
+    <script type="text/javascript" language="javascript">
+        var process = document.doctype.name;
+        document.write("Belge Türü: " + process);
+    </script>
 </body>
 
 </html>
