@@ -50,8 +50,9 @@
     <a id="js" name="Javascript" href="#">Javascript</a>
     <a id="php" name="Php" href="#">Php</a>
     <a id="css" name="Css" href="#">Css</a>
-    <a id="css" name="JQuery" href="#">JQuery</a>
-    <p>Çapa Sayısı:<span id="capasayisi"></span></p>
+    <a id="css" name="JQuery" href="#">JQuery</a><br>
+    Çapa Sayısı:<span id="capasayisi"></span><br>
+    Link Sayısı:<span id="linksayisi"></span><br>
     <script type="text/javascript" language="javascript">
         /* doctype : Belge döküman türü referansını elde etmek için kullanılır.. */
         document.write("doctype: " + document.doctype.name + "<br>");
@@ -95,7 +96,10 @@
          */
         /* anchors: Belge içerisindeki çapa TAG'ına sahip tüm elemanların referansını elde etmek için kullanılır. */
         var anchorsView = document.anchors.length;
-        document.getElementById("capasayisi").innerHTML = anchorsView
+        document.getElementById("capasayisi").innerHTML = anchorsView;
+        /* links: Belge içerisindeki tüm linklerin referansını elde etmek için kullanılır. */
+        var linksView = document.links.length;
+        document.getElementById("linksayisi").innerHTML = linksView;
     </script>
     <button onclick="test()">Başa Dön</button>
 </body>
