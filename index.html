@@ -47,7 +47,11 @@
     <button id="btnBlackBG" onclick="blackBG()">SİYAH</button>
     <button id="btnBlueBG" onclick="blueBG()">MAVİ</button>
     <button id="btnGreenBG" onclick="greenBG()">YEŞİL</button> <br /><br />
-
+    <a id="js" name="Javascript" href="#">Javascript</a>
+    <a id="php" name="Php" href="#">Php</a>
+    <a id="css" name="Css" href="#">Css</a>
+    <a id="css" name="JQuery" href="#">JQuery</a>
+    <p>Çapa Sayısı:<span id="capasayisi"></span></p>
     <script type="text/javascript" language="javascript">
         /* doctype : Belge döküman türü referansını elde etmek için kullanılır.. */
         document.write("doctype: " + document.doctype.name + "<br>");
@@ -84,11 +88,14 @@
         /* hasFocus: Belge odağının olup olmadığını(Boolean veri türünde) elde etmek için kullanılır. */
         document.write("hasFocus:" + document.hasFocus() + "<br>");
         /* activeElement: Belge içerisindeki seçili veya odaklanılmış elemanın referansını elde etmek için kullanılır. */
-        function activeElementView() {
-            var process = document.activeElement.innerHTML;
-            alert(process);
-        };
-
+        /* function activeElementView() {
+           var process = document.activeElement.innerHTML;
+           alert(process);
+         }; 
+         */
+        /* anchors: Belge içerisindeki çapa TAG'ına sahip tüm elemanların referansını elde etmek için kullanılır. */
+        var anchorsView = document.anchors.length;
+        document.getElementById("capasayisi").innerHTML = anchorsView
     </script>
     <button onclick="test()">Başa Dön</button>
 </body>
