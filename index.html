@@ -54,6 +54,10 @@
     Çapa Sayısı:<span id="capasayisi"></span><br>
     Link Sayısı:<span id="linksayisi"></span><br>
     Script Sayısı:<span id="scriptsayisi"></span><br>
+    Form Sayısı:<span id="formsayisi"></span><br>
+    <form>
+        Adı Soyadı: <input type="text" id="username" name="isimalani"><br>
+    </form>
     <script type="text/javascript" language="javascript">
         /* doctype : Belge döküman türü referansını elde etmek için kullanılır.. */
         document.write("doctype: " + document.doctype.name + "<br>");
@@ -104,6 +108,9 @@
         /* scripts: Belge içerisindeki script tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. */
         var scriptsView = document.scripts.length;
         document.getElementById("scriptsayisi").innerHTML = scriptsView;
+        /* forms: Belge içerisindeki form tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. */
+        var formsView = document.forms.length;
+        document.getElementById("formsayisi").innerHTML = formsView;
     </script>
     <button onclick="test()">Başa Dön</button>
 </body>
