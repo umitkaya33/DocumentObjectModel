@@ -150,6 +150,13 @@ function formsFunctionSimple() {
 function locationFunctionSimple() {
     document.location.href = "#top"
 };
+//! CreateElement() & CreateTextNode() & appendChild() kullanım örneği
+function createElementFunctionSimple() {
+    var result = document.createElement("span");
+    var textNode = document.createTextNode("♥");
+    result.appendChild(textNode);
+    document.getElementById("sCreateElement").appendChild(result);
+};
 export {
     get_SimpleFunction,
     get_hepsinisec_SimpleFunction,
@@ -180,4 +187,5 @@ export {
     scriptsFunctionSimple,
     formsFunctionSimple,
     locationFunctionSimple,
+    createElementFunctionSimple
 };

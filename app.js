@@ -133,4 +133,8 @@ const example_Location = document.getElementById('btnLocation');
 example_Location.addEventListener('click', () => {
     domModule.locationFunctionSimple();
 });
+const example_createElement = document.getElementById('bCreateElement');
+example_createElement.addEventListener('click', () => {
+    domModule.createElementFunctionSimple();
+});
 
