@@ -37,6 +37,10 @@ const btnGreenBG = document.getElementById('btnGreenBG');
 btnGreenBG.addEventListener('click', () => {
     domModule.SetColor('Green');
 });
+const btnWhiteBG = document.getElementById('btnWhiteBG');
+btnWhiteBG.addEventListener('click', () => {
+    domModule.SetColor('White');
+});
 const imagesSmall = document.getElementById('images_Small');
 imagesSmall.addEventListener('click', () => {
     domModule.imagesFunction();
@@ -45,3 +49,88 @@ const linksAdd = document.getElementById('btnLinksAdd');
 linksAdd.addEventListener('click', () => {
     domModule.linksAdd();
 });
+const example_Doctype = document.getElementById('bDoctype');
+example_Doctype.addEventListener('click', () => {
+    domModule.doctypeFunctionSimple();
+});
+const example_DocumentElement = document.getElementById('bDocumentElement');
+example_DocumentElement.addEventListener('click', () => {
+    domModule.documentElementFunctionSimple();
+});
+const example_CharacterSet = document.getElementById('bCharacterSet');
+example_CharacterSet.addEventListener('click', () => {
+    domModule.characterSetFunctionSimple();
+});
+const example_InputEncoding = document.getElementById('bInputEncoding');
+example_InputEncoding.addEventListener('click', () => {
+    domModule.inputEncodingFunctionSimple();
+});
+const example_Title = document.getElementById('bTitle');
+example_Title.addEventListener('click', () => {
+    domModule.titleFunctionSimple();
+});
+const example_CompatMode = document.getElementById('bCompatMode');
+example_CompatMode.addEventListener('click', () => {
+    domModule.compatModeFunctionSimple();
+});
+const example_DefaultView = document.getElementById('bDefaultView');
+example_DefaultView.addEventListener('click', () => {
+    domModule.defaultViewFunctionSimple();
+});
+const example_DocumentURI = document.getElementById('bDocumentURI');
+example_DocumentURI.addEventListener('click', () => {
+    domModule.documentURIFunctionSimple();
+});
+const example_BaseURI = document.getElementById('bBaseURI');
+example_BaseURI.addEventListener('click', () => {
+    domModule.baseURIFunctionSimple();
+});
+const example_URL = document.getElementById('bURL');
+example_URL.addEventListener('click', () => {
+    domModule.URLFunctionSimple();
+});
+const example_Domain = document.getElementById('bDomain');
+example_Domain.addEventListener('click', () => {
+    domModule.domainFunctionSimple();
+});
+const example_LastModified = document.getElementById('bLastModified');
+example_LastModified.addEventListener('click', () => {
+    domModule.lastModifiedFunctionSimple();
+});
+const example_ReadyState = document.getElementById('bReadyState');
+example_ReadyState.addEventListener('click', () => {
+    domModule.readyStateFunctionSimple();
+});
+const example_DesignMode = document.getElementById('bDesignMode');
+example_DesignMode.addEventListener('click', () => {
+    domModule.designModeFunctionSimple();
+});
+const example_HasFocus = document.getElementById('bHasFocus');
+example_HasFocus.addEventListener('click', () => {
+    domModule.hasFocusFunctionSimple();
+});
+const example_Plugin = document.getElementById('bPlugin');
+example_Plugin.addEventListener('click', () => {
+    domModule.pluginFunctionSimple();
+});
+const example_Anchors = document.getElementById('bAnchors');
+example_Anchors.addEventListener('click', () => {
+    domModule.anchorsFunctionSimple();
+});
+const example_Links = document.getElementById('bLinks');
+example_Links.addEventListener('click', () => {
+    domModule.linksFunctionSimple();
+});
+const example_Scripts = document.getElementById('bScripts');
+example_Scripts.addEventListener('click', () => {
+    domModule.scriptsFunctionSimple();
+});
+const example_Forms = document.getElementById('bForms');
+example_Forms.addEventListener('click', () => {
+    domModule.formsFunctionSimple();
+});
+const example_Location = document.getElementById('btnLocation');
+example_Location.addEventListener('click', () => {
+    domModule.locationFunctionSimple();
+});
+

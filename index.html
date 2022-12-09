@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,126 +7,85 @@
     <title>DocumentObjectModel</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body onclick="activeElementView()">
-    <!--! getElementByID() Özelliği hakkında -->
-    <button id="btnDomModule" onclick="get_SimpleFunction()">Değiştir</button>
-    <div id="demo">ÜSTEKİ BUTONA TIKLANINCA BURDAKİ YAZI DEĞİŞECEK</div> <br>
-    <!--! getElemensByName Özelliği hakkında -->
-    İlgi Alanlarınız. <br />
-    Alışveriş: <input name="ilgialanlari" type="checkbox" value="Alışveriş" />
-    Eğlence: <input name="ilgialanlari" type="checkbox" value="Eğlence" />
-    Sinema: <input name="ilgialanlari" type="checkbox" value="Sinema" />
-    Tiyatro: <input name="ilgialanlari" type="checkbox" value="Tiyatro" />
-    Gezi: <input name="ilgialanlari" type="checkbox" value="Gezi" />
-    İnternet: <input name="ilgialanlari" type="checkbox" value="İnternet" />
-    <button id="btnDomModule_sec" onclick="get_hepsinisec_SimpleFunction()">Hepsini Seç</button>
-    <button id="btnDomModule_temizle" onclick="get_hepsinitemizle_SimpleFunction()">Tümünü Temizle</button>
-    <br />
-    <!-- ! getElementsByTagName() Özelliği Hakkında -->
-    <ul>
-        <li>Html</li>
-        <li>Javascript</li>
-        <li>Css</li>
-        <li>Xml</li>
-        <li>Jquery</li>
-    </ul>
-    <button id="btnDomModule_degistir" onclick="get_degistir_SimpleFunction()">HTML olanı JS olarak değiştir</button>
-    <br /><br />
-    <div class="bicimlendirme">Javascript Eğitim Seti</div>
-    <div class="bicimlendirme">Php Eğitim Seti</div>
-    <div class="bicimlendirme">Html Eğitim Seti</div>
-    <div class="bicimlendirme">Css Eğitim Seti</div>
-    <div class="bicimlendirme">Xml Eğitim Seti</div>
-    <div class="bicimlendirme">JQuery Eğitim Seti</div>
-    <button id="btnDomModule_arkaplan" onclick="get_arkaplan_SimpleFunction()">Arkaplan Değiştir</button>
-    <br />
-
-    <button id="btnRedBG" onclick="redBG()">KIRMIZI</button>
-    <button id="btnBlackBG" onclick="blackBG()">SİYAH</button>
-    <button id="btnBlueBG" onclick="blueBG()">MAVİ</button>
-    <button id="btnGreenBG" onclick="greenBG()">YEŞİL</button> <br /><br />
-    <a id="js" name="Javascript" href="#">Javascript</a>
-    <a id="php" name="Php" href="#">Php</a>
-    <a id="css" name="Css" href="#">Css</a>
-    <a id="css" name="JQuery" href="#">JQuery</a><br>
-    Çapa Sayısı:<span id="capasayisi"></span><br>
-    Link Sayısı:<span id="linksayisi"></span><br>
-    Script Sayısı:<span id="scriptsayisi"></span><br>
-    Form Sayısı:<span id="formsayisi"></span><br>
-    <form>
-        Adı Soyadı: <input type="text" id="username" name="isimalani">
-    </form><br>
-    <img src="img/css.png">
-    <img src="img/html.png">
-    <img src="img/js.png">
-    <img src="img/php.png"><br>
-    <button id="images_Small" onclick="imagesFunction()"> Tüm Resimleri Küçült</button><br>
-
-    <br>
-    <script type="text/javascript" language="javascript">
-        /* doctype : Belge döküman türü referansını elde etmek için kullanılır.. */
-        document.write("doctype: " + document.doctype.name + "<br>");
-        /* documentElement : HTML TAG'ının referansını element nesnesi halinde elde etmek için kullanılır... */
-        document.write("documentElement: " + document.documentElement.nodeName + "<br>");
-        /*  characterSet : Belgenin karakter kodlamısını görüntülemek için kullanılır...*/
-        document.write("characterSet: " + document.characterSet + "<br>");
-        /* inputEncoding : Belgenin karakter kodlamasının referansını elde etmek için kullanılır... */
-        document.write("inputEncoding: " + document.inputEncoding + "<br>");
-        /* Title : Belge içerisindeki title tagını elde etmek için kullanılır... */
-        document.write("Title: " + document.title + "<br>");
-        /* compatMode : Belgenin tarayıcı tarafında hangi modda çalıştırıldığını elde etmek için kullanılır... */
-        document.write("compatMode: " + document.compatMode + "<br>");
-        /* defaultView: Belgenin pencere nesnesini elde etmek için kullanılır */
-        document.write("defaultView:" + document.defaultView + "<br>");
-        /* documentURI: Belge sayfasının URI adresi referansını elde etmek için kullanılır. */
-        document.write("documentURI:" + document.documentURI + "<br>");
-        /* location: Belge sayfasının URL adresi referansını elde etmek için kullanılır. */
-        function test() {
-            document.location.href = "#top"
-        }
-        /* baseURI: Belgenin mutlak URL adresi referansını elde etmek için kullanılır. */
-        document.write("baseURI:" + document.baseURI + "<br>");
-        /* URL: Belgenin tam URL adresi referansını elde etmek için kullanılır. */
-        document.write("URL:" + document.URL + "<br>");
-        /* domain: Belgenin alan adı adresi referansını elde etmek için kullanılır. */
-        document.write("domain:" + document.domain + "<br>");
-        /* lastModified: Belgenin en son güncelleme tarihini ve saatini elde etmek için kullanılır. */
-        document.write("lastModified:" + document.lastModified + "<br>");
-        /* readyState: Belge içeriğinin tarayıcı tarafından yüklenme durumu değeri referansını elde etmek için kullanılır. */
-        document.write("readyState:" + document.readyState + "<br>");
-        /* designMode: Belgenin çalışma anında düzenlenebilir olup olmadığını elde etmek için kullanılır. */
-        document.write("designMode:" + document.designMode + "<br>");
-        /* hasFocus: Belge odağının olup olmadığını(Boolean veri türünde) elde etmek için kullanılır. */
-        document.write("hasFocus:" + document.hasFocus() + "<br>");
-        /* activeElement: Belge içerisindeki seçili veya odaklanılmış elemanın referansını elde etmek için kullanılır. */
-        /* function activeElementView() {
-           var process = document.activeElement.innerHTML;
-           alert(process);
-         }; 
-         */
-        /* anchors: Belge içerisindeki çapa TAG'ına sahip tüm elemanların referansını elde etmek için kullanılır. */
-        var anchorsView = document.anchors.length;
-        document.getElementById("capasayisi").innerHTML = anchorsView;
-        /* links: Belge içerisindeki tüm linklerin referansını elde etmek için kullanılır. */
-        var linksView = document.links.length;
-        document.getElementById("linksayisi").innerHTML = linksView;
-        /* scripts: Belge içerisindeki script tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. */
-        var scriptsView = document.scripts.length;
-        document.getElementById("scriptsayisi").innerHTML = scriptsView;
-        /* forms: Belge içerisindeki form tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. */
-        var formsView = document.forms.length;
-        document.getElementById("formsayisi").innerHTML = formsView;
-        /* plugins: Tarayıcıdaki tüm eklentilerin referanslarını elde etmek için kullanılır. */
-        for (var index = 0; index < navigator.plugins.length; index++) {
-            var result = navigator.plugins[index].name;
-            document.write(result + " ");
-        }
-    </script><br>
-    <a id="linkekle"> Buraya link eklenecek</a>
-    <button id="btnLinksAdd" onclick="linksAdd()">UYGULA</button><br>
-    <button onclick="test()">Başa Dön</button>
+<body>
+    <div class="ustkisim">
+        <button id="btnDomModule">Değiştir</button>
+        <div id="demo">ÜSTEKİ BUTONA TIKLANINCA BURDAKİ YAZI DEĞİŞECEK</div> <br>
+        <button id="btnRedBG">KIRMIZI</button>
+        <button id="btnBlackBG">SİYAH</button>
+        <button id="btnBlueBG">MAVİ</button>
+        <button id="btnGreenBG">YEŞİL</button>
+        <button id="btnWhiteBG">BEYAZ</button><br /><br />
+    </div>
+    <div class="ilgiAlanlari">
+        İlgi Alanlarınız. <br />
+        Alışveriş: <input name="ilgialanlari" type="checkbox" value="Alışveriş" />
+        Eğlence: <input name="ilgialanlari" type="checkbox" value="Eğlence" />
+        Sinema: <input name="ilgialanlari" type="checkbox" value="Sinema" />
+        Tiyatro: <input name="ilgialanlari" type="checkbox" value="Tiyatro" />
+        Gezi: <input name="ilgialanlari" type="checkbox" value="Gezi" />
+        İnternet: <input name="ilgialanlari" type="checkbox" value="İnternet" />
+        <button id="btnDomModule_sec">Hepsini Seç</button>
+        <button id="btnDomModule_temizle">Tümünü Temizle</button>
+    </div>
+    <div class="liste">
+        <ul>
+            <li>Html</li>
+            <li>Javascript</li>
+            <li>Css</li>
+            <li>Xml</li>
+            <li>Jquery</li>
+        </ul>
+        <button id="btnDomModule_degistir">HTML olanı JS olarak değiştir</button>
+    </div>
+    <div class="ortakisim">
+        <div class="bicimlendirme">Javascript Eğitim Seti</div>
+        <div class="bicimlendirme">Php Eğitim Seti</div>
+        <div class="bicimlendirme">Html Eğitim Seti</div>
+        <div class="bicimlendirme">Css Eğitim Seti</div>
+        <div class="bicimlendirme">Xml Eğitim Seti</div>
+        <div class="bicimlendirme">JQuery Eğitim Seti</div>
+        <button id="btnDomModule_arkaplan">Arkaplan Değiştir</button>
+        <a id="js" name="Javascript" href="#">Javascript</a>
+        <a id="php" name="Php" href="#">Php</a>
+        <a id="css" name="Css" href="#">Css</a>
+        <a id="css" name="JQuery" href="#">JQuery</a>
+        <form>
+            Adı Soyadı: <input type="text" id="username" name="isimalani">
+        </form><br>
+        <img src="img/css.png">
+        <img src="img/html.png">
+        <img src="img/js.png">
+        <img src="img/php.png"><br>
+        <button id="images_Small"> Tüm Resimleri Küçült</button><br>
+    </div>
+    <div class="features">
+        <b id="bDoctype">Doctype:</b><span id="sDoctype"></span><br>
+        <b id="bDocumentElement">DocumentElement:</b><span id="sDocumentElement"></span><br>
+        <b id="bCharacterSet">CharacterSet:</b><span id="sCharacterSet"></span><br>
+        <b id="bInputEncoding">InputEncoding:</b><span id="sInputEncoding"></span><br>
+        <b id="bTitle">Title:</b><span id="sTitle"></span><br>
+        <b id="bCompatMode">CompatMode:</b><span id="sCompatMode"></span><br>
+        <b id="bDefaultView">DefaultView:</b><span id="sDefaultView"></span><br>
+        <b id="bDocumentURI">DocumentURI:</b><span id="sDocumentURI"></span><br>
+        <b id="bBaseURI">BaseURI:</b><span id="sBaseURI"></span><br>
+        <b id="bURL">URL:</b><span id="sURL"></span><br>
+        <b id="bDomain">Domain:</b><span id="sDomain"></span><br>
+        <b id="bLastModified">LastModified:</b><span id="sLastModified"></span><br>
+        <b id="bReadyState">ReadyState:</b><span id="sReadyState"></span><br>
+        <b id="bDesignMode">DesignMode:</b><span id="sDesignMode"></span><br>
+        <b id="bHasFocus">HasFocus:</b><span id="sHasFocus"></span><br>
+        <b id="bPlugin">Plugin:</b><span id="sPlugin"></span><br>
+        <b id="bAnchors">Anchors:</b><span id="sAnchors"></span><br>
+        <b id="bLinks">Links:</b><span id="sLinks"></span><br>
+        <b id="bScripts">Scripts:</b><span id="sScripts"></span><br>
+        <b id="bForms">Forms:</b><span id="sForms"></span><br>
+    </div>
+    <div class="altalan">
+        <a id="linkekle"> Buraya link eklenecek</a>
+        <button id="btnLinksAdd">UYGULA</button><br>
+        <button id="btnLocation">Başa Dön</button>
+    </div>
 </body>
-
 </html>
 <script src="app.js" type="module"></script>

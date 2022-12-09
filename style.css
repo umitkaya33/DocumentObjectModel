@@ -1,6 +1,13 @@
-.bicimlendirme{
+.bicimlendirme {
     color: brown;
     border: 1px solid black;
     margin: 5px;
     padding: 5px;
+}
+
+.features b{
+    cursor: pointer;
+}
+.features b:hover{
+    color: red;
 }
