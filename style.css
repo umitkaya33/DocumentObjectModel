@@ -5,9 +5,14 @@
     padding: 5px;
 }
 
-.features b{
-    cursor: pointer;
+.features {
+    border: 1px solid black;
+    padding: 5px;
+    align-items: center;
 }
-.features b:hover{
+
+
+.features b:hover {
+    cursor: pointer;
     color: red;
 }

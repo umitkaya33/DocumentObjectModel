@@ -137,4 +137,8 @@ const example_createElement = document.getElementById('bCreateElement');
 example_createElement.addEventListener('click', () => {
     domModule.createElementFunctionSimple();
 });
+const example_querySelector = document.getElementById('bQuerySelector');
+example_querySelector.addEventListener('click', () => {
+    domModule.querySelectorFunctionSimple();
+});
 

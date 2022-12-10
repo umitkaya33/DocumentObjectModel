@@ -157,6 +157,10 @@ function createElementFunctionSimple() {
     result.appendChild(textNode);
     document.getElementById("sCreateElement").appendChild(result);
 };
+//! querySelector kullanım örneği
+function querySelectorFunctionSimple() {
+    document.querySelector("div.features>table tr td >span#sQuerySelector").innerHTML = "QuerySelector Çalıştı";
+};
 export {
     get_SimpleFunction,
     get_hepsinisec_SimpleFunction,
@@ -187,5 +191,6 @@ export {
     scriptsFunctionSimple,
     formsFunctionSimple,
     locationFunctionSimple,
-    createElementFunctionSimple
+    createElementFunctionSimple,
+    querySelectorFunctionSimple
 };
