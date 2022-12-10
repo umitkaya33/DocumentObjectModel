@@ -141,4 +141,8 @@ const example_querySelector = document.getElementById('bQuerySelector');
 example_querySelector.addEventListener('click', () => {
     domModule.querySelectorFunctionSimple();
 });
+const example_querySelectorAll = document.getElementById('bQuerySelectorAll');
+example_querySelectorAll.addEventListener('click', () => {
+    domModule.querySelectorAllFunctionSimple();
+});
 

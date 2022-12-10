@@ -161,6 +161,13 @@ function createElementFunctionSimple() {
 function querySelectorFunctionSimple() {
     document.querySelector("div.features>table tr td >span#sQuerySelector").innerHTML = "QuerySelector Çalıştı";
 };
+
+//! querySelectorAll kullanım örneği
+function querySelectorAllFunctionSimple() {
+    document.querySelectorAll("div")[11].style.backgroundColor = "red";
+    document.querySelectorAll("b")[22].style.color = "white";
+    document.querySelectorAll("b")[22].innerHTML="querySelectorAll çalıştı";
+};
 export {
     get_SimpleFunction,
     get_hepsinisec_SimpleFunction,
@@ -192,5 +199,6 @@ export {
     formsFunctionSimple,
     locationFunctionSimple,
     createElementFunctionSimple,
-    querySelectorFunctionSimple
+    querySelectorFunctionSimple,
+    querySelectorAllFunctionSimple
 };
