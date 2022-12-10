@@ -161,7 +161,11 @@ const example_cookie = document.getElementById('bCookie');
 example_cookie.addEventListener('click', () => {
     domDocumentModule.cookieFunctionSimple();
 });
-const testModule = document.getElementById('testUmit');
-testModule.addEventListener('click', () => {
-    domAttributesModule.testSimpleFunction();
+const length_example = document.getElementById('bAttLength');
+length_example.addEventListener('click', () => {
+    domAttributesModule.lengthSimpleFunction();
+});
+const name_example = document.getElementById('bAttName');
+name_example.addEventListener('click', () => {
+    domAttributesModule.nameSimpleFunction();
 });

@@ -16,3 +16,12 @@
     cursor: pointer;
     color: red;
 }
+.domAttributes{
+    border: 1px solid red;
+    padding: 5px;
+    align-items: center;
+}
+.domAttributes b:hover{
+    cursor: pointer;
+    color: darkred;
+}
