@@ -188,6 +188,16 @@ function normalizeFunctionSimple() {
     var result = document.getElementById("sNormalize");
     result.innerHTML = process.childNodes.length;
 };
+//! Cookie : Geçici çerez kullanım örneği..
+function cookieFunctionSimple() {
+    var lifeTime = new Date();
+    lifeTime.setMonth(lifeTime.getMonth() + 1);
+    var tempName = "isimsoyisim";
+    var tempValue = "Ümit Kaya";
+    document.cookie = tempName + "=" + escape(tempValue) + ";expires=" + lifeTime;
+    var values = document.cookie;
+    document.getElementById("sCookie").innerHTML = unescape(values);
+};
 export {
     get_SimpleFunction,
     get_hepsinisec_SimpleFunction,
@@ -223,5 +233,6 @@ export {
     querySelectorAllFunctionSimple,
     adoptNodeFunctionSimple,
     importNodeFunctionSimple,
-    normalizeFunctionSimple
+    normalizeFunctionSimple,
+    cookieFunctionSimple
 };

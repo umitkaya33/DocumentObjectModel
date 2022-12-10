@@ -157,6 +157,11 @@ const example_normalize = document.getElementById('bNormalize');
 example_normalize.addEventListener('click', () => {
     domModule.normalizeFunctionSimple();
 });
+const example_cookie = document.getElementById('bCookie');
+example_cookie.addEventListener('click', () => {
+    domModule.cookieFunctionSimple();
+});
+
 
 
 
