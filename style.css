@@ -11,17 +11,18 @@
     align-items: center;
 }
 
-
 .features b:hover {
     cursor: pointer;
     color: red;
 }
-.domAttributes{
-    border: 1px solid red;
+
+.domAttributes {
+    border: 1px solid darkred;
     padding: 5px;
     align-items: center;
 }
-.domAttributes b:hover{
+
+.domAttributes b:hover {
     cursor: pointer;
     color: darkred;
 }

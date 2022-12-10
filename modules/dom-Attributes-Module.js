@@ -14,7 +14,21 @@ function nameSimpleFunction() {
     }
     document.getElementById("sAttName").innerHTML = range;
 };
+//! value: Belge içerisinde html elemanına eklenmiş olan özelliklerin isim değerinin referanslarını elde etmek için kullanılır.
+function valueSimpleFunction() {
+    var process = document.getElementsByName("attributesValue")[0].attributes;
+    var piece = process.length;
+    var range = "";
+    var index = 0;
+    while (index < piece) {
+        var result = process[index].value;
+        range += result + " ";
+        index++;
+    }
+    document.getElementById("sAttValue").innerHTML = range;
+};
 export {
     lengthSimpleFunction,
-    nameSimpleFunction
+    nameSimpleFunction,
+    valueSimpleFunction
 };

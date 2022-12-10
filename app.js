@@ -1,5 +1,5 @@
 import * as  domDocumentModule from "./modules/dom-Document-Module.js";
-import * as domAttributesModule from "./modules/dom-Attributes-Module.js"
+import * as domAttributesModule from "./modules/dom-Attributes-Module.js";
 
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
@@ -168,4 +168,8 @@ length_example.addEventListener('click', () => {
 const name_example = document.getElementById('bAttName');
 name_example.addEventListener('click', () => {
     domAttributesModule.nameSimpleFunction();
+});
+const value_example = document.getElementById('bAttValue');
+value_example.addEventListener('click', () => {
+    domAttributesModule.valueSimpleFunction();
 });
