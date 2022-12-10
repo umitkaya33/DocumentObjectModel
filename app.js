@@ -153,6 +153,10 @@ const example_importNode = document.getElementById('bImportNode');
 example_importNode.addEventListener('click', () => {
     domModule.importNodeFunctionSimple();
 });
+const example_normalize = document.getElementById('bNormalize');
+example_normalize.addEventListener('click', () => {
+    domModule.normalizeFunctionSimple();
+});
 
 
 

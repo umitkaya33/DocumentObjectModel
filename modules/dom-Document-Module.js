@@ -178,8 +178,15 @@ function adoptNodeFunctionSimple() {
 function importNodeFunctionSimple() {
     var process = document.getElementsByTagName("iframe")[1];
     var area = process.contentWindow.document.getElementsByTagName("div")[0];
-    var result = document.importNode(area,true);
+    var result = document.importNode(area, true);
     document.getElementById("sImportNode").appendChild(result);
+};
+//! normalize() : Belge içerisine başka bir belgeden Node eklemek için kullanılır Diğer Belgedekileri olduğu gibi bırakır..
+function normalizeFunctionSimple() {
+    document.normalize();
+    var process = document.body;
+    var result = document.getElementById("sNormalize");
+    result.innerHTML = process.childNodes.length;
 };
 export {
     get_SimpleFunction,
@@ -215,5 +222,6 @@ export {
     querySelectorFunctionSimple,
     querySelectorAllFunctionSimple,
     adoptNodeFunctionSimple,
-    importNodeFunctionSimple
+    importNodeFunctionSimple,
+    normalizeFunctionSimple
 };
