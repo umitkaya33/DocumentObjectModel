@@ -1,4 +1,4 @@
-import * as  domModule from "./modules/dom-Module.js";
+import * as  domModule from "./modules/dom-Document-Module.js";
 
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
@@ -145,4 +145,9 @@ const example_querySelectorAll = document.getElementById('bQuerySelectorAll');
 example_querySelectorAll.addEventListener('click', () => {
     domModule.querySelectorAllFunctionSimple();
 });
+const example_adoptNode = document.getElementById('bAdoptNode');
+example_adoptNode.addEventListener('click', () => {
+    domModule.adoptNodeFunctionSimple();
+});
+
 
