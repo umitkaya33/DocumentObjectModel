@@ -167,12 +167,19 @@ function querySelectorAllFunctionSimple() {
     document.querySelectorAll("b")[22].style.color = "white";
     document.querySelectorAll("b.bQuerySelector")[0].innerHTML = "querySelectorAll çalıştı";
 };
-//! adoptNode() : Belge içerisine başka bir belgeden Node eklemek için kullanılır..
+//! adoptNode() : Belge içerisine başka bir belgeden Node eklemek için kullanılır Diğer belgedekileri temizler..
 function adoptNodeFunctionSimple() {
     var process = document.getElementsByTagName("iframe")[0];
     var area = process.contentWindow.document.getElementsByTagName("span")[0];
     var result = document.adoptNode(area);
     document.getElementById("sAdoptNode").appendChild(result);
+};
+//! importNode() : Belge içerisine başka bir belgeden Node eklemek için kullanılır Diğer Belgedekileri olduğu gibi bırakır..
+function importNodeFunctionSimple() {
+    var process = document.getElementsByTagName("iframe")[1];
+    var area = process.contentWindow.document.getElementsByTagName("div")[0];
+    var result = document.importNode(area,true);
+    document.getElementById("sImportNode").appendChild(result);
 };
 export {
     get_SimpleFunction,
@@ -207,5 +214,6 @@ export {
     createElementFunctionSimple,
     querySelectorFunctionSimple,
     querySelectorAllFunctionSimple,
-    adoptNodeFunctionSimple
+    adoptNodeFunctionSimple,
+    importNodeFunctionSimple
 };

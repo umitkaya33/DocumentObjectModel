@@ -149,5 +149,10 @@ const example_adoptNode = document.getElementById('bAdoptNode');
 example_adoptNode.addEventListener('click', () => {
     domModule.adoptNodeFunctionSimple();
 });
+const example_importNode = document.getElementById('bImportNode');
+example_importNode.addEventListener('click', () => {
+    domModule.importNodeFunctionSimple();
+});
+
 
 
