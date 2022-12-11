@@ -1,4 +1,4 @@
-import * as  domDocumentModule from "./modules/dom-Document-Module.js";
+import * as domDocumentModule from "./modules/dom-Document-Module.js";
 import * as domAttributesModule from "./modules/dom-Attributes-Module.js";
 import * as domElementsModule from "./modules/dom-Elements-Module.js";
 

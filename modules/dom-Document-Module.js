@@ -159,11 +159,11 @@ function createElementFunctionSimple() {
 };
 //! querySelector kullanım örneği
 function querySelectorFunctionSimple() {
-    document.querySelector("div.features>table tr td >span#sQuerySelector").innerHTML = "QuerySelector Çalıştı";
+    document.querySelector("div.domDocument>table tr td >span#sQuerySelector").innerHTML = "QuerySelector Çalıştı";
 };
 //! querySelectorAll kullanım örneği
 function querySelectorAllFunctionSimple() {
-    document.querySelectorAll("div.features")[0].style.backgroundColor = "red";
+    document.querySelectorAll("div.domDocument")[0].style.backgroundColor = "red";
     document.querySelectorAll("b")[22].style.color = "white";
     document.querySelectorAll("b.bQuerySelector")[0].innerHTML = "querySelectorAll çalıştı";
 };
