@@ -185,3 +185,7 @@ const setNamedItem_example = document.getElementById('bAttsetNamedItem');
 setNamedItem_example.addEventListener('click', () => {
     domAttributesModule.setNamedItemSimpleFunction();
 });
+const removeNamedItem_example = document.getElementById('bAttremoveNamedItem');
+removeNamedItem_example.addEventListener('click', () => {
+    domAttributesModule.removeNamedItemSimpleFunction();
+});

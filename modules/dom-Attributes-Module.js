@@ -46,11 +46,17 @@ function setNamedItemSimpleFunction() {
     addFeatures.value = "color:white;background-color:black;";
     process.attributes.setNamedItem(addFeatures);
 };
+//! removeNamedItem(): Belge içerisinde html elemanına eklenmiş olan özellik node'u kaldırmak için kullanılır.
+function removeNamedItemSimpleFunction() {
+    var process = document.getElementById("sAttremoveNamedItem");
+    process.attributes.removeNamedItem("style");
+};
 export {
     lengthSimpleFunction,
     nameSimpleFunction,
     valueSimpleFunction,
     specifiedSimpleFunction,
     getNamedItemSimpleFunction,
-    setNamedItemSimpleFunction
+    setNamedItemSimpleFunction,
+    removeNamedItemSimpleFunction
 };
