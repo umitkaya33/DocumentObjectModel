@@ -173,3 +173,7 @@ const value_example = document.getElementById('bAttValue');
 value_example.addEventListener('click', () => {
     domAttributesModule.valueSimpleFunction();
 });
+const specified_example = document.getElementById('bAttSpecified');
+specified_example.addEventListener('click', () => {
+    domAttributesModule.specifiedSimpleFunction();
+});

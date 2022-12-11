@@ -27,8 +27,15 @@ function valueSimpleFunction() {
     }
     document.getElementById("sAttValue").innerHTML = range;
 };
+//! specified: Belge içerisinde html elemanına herhangi bir özelliğin eklenip eklenmediğini görmek için Boolean veri türünde gösterir.
+function specifiedSimpleFunction() {
+    var process = document.getElementsByName("attributesSpecified")[0];
+    var result = process.getAttributeNode("id").specified;
+    document.getElementById("sAttSpecified").innerHTML = result;
+};
 export {
     lengthSimpleFunction,
     nameSimpleFunction,
-    valueSimpleFunction
+    valueSimpleFunction,
+    specifiedSimpleFunction
 };
