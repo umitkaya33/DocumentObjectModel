@@ -51,6 +51,19 @@ function removeNamedItemSimpleFunction() {
     var process = document.getElementById("sAttremoveNamedItem");
     process.attributes.removeNamedItem("style");
 };
+//! item(): Belge içerisinde html elemanına eklenmiş olan özellik node'u referansını elde etmek veya ayarlamak için kullanılır.
+function itemSimpleFunction() {
+    var process = document.getElementsByName("attributesItemSpan")[0];
+    var piece = document.getElementById("sAttItem").attributes.length;
+    var range = "";
+    for (let index = 0; index < piece; index++) {
+        var resultName = process.attributes.item(index).name;
+        var resultValue = process.attributes.item(index).value;
+        var result = resultName + " " + resultValue;
+        range += result;
+    }
+    document.getElementById("sAttItem").innerHTML = range;
+};
 export {
     lengthSimpleFunction,
     nameSimpleFunction,
@@ -58,5 +71,6 @@ export {
     specifiedSimpleFunction,
     getNamedItemSimpleFunction,
     setNamedItemSimpleFunction,
-    removeNamedItemSimpleFunction
+    removeNamedItemSimpleFunction,
+    itemSimpleFunction
 };

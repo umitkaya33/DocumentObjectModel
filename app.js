@@ -189,3 +189,7 @@ const removeNamedItem_example = document.getElementById('bAttremoveNamedItem');
 removeNamedItem_example.addEventListener('click', () => {
     domAttributesModule.removeNamedItemSimpleFunction();
 });
+const item_example = document.getElementById('bAttItem');
+item_example.addEventListener('click', () => {
+    domAttributesModule.itemSimpleFunction();
+});
