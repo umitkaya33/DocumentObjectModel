@@ -33,16 +33,24 @@ function specifiedSimpleFunction() {
     var result = process.getAttributeNode("id").specified;
     document.getElementById("sAttSpecified").innerHTML = result;
 };
-//! getNamedItem: Belge içerisinde html elemanına eklenmiş olan özellik node'u referansını elde etmek için kullanılır.
+//! getNamedItem(): Belge içerisinde html elemanına eklenmiş olan özellik node'u referansını elde etmek için kullanılır.
 function getNamedItemSimpleFunction() {
     var process = document.getElementsByName("attributesgetNamedItem")[0];
     var result = process.attributes.getNamedItem("id").value;
     document.getElementById("sAttgetNamedItem").innerHTML = result;
+};
+//! setNamedItem(): Belge içerisinde html elemanına özellik node'u eklemek için kullanılır.
+function setNamedItemSimpleFunction() {
+    var process = document.getElementById("sAttsetNamedItem");
+    var addFeatures = document.createAttribute("style");
+    addFeatures.value = "color:white;background-color:black;";
+    process.attributes.setNamedItem(addFeatures);
 };
 export {
     lengthSimpleFunction,
     nameSimpleFunction,
     valueSimpleFunction,
     specifiedSimpleFunction,
-    getNamedItemSimpleFunction
+    getNamedItemSimpleFunction,
+    setNamedItemSimpleFunction
 };
