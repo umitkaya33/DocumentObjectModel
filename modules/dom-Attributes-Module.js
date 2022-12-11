@@ -33,9 +33,16 @@ function specifiedSimpleFunction() {
     var result = process.getAttributeNode("id").specified;
     document.getElementById("sAttSpecified").innerHTML = result;
 };
+//! getNamedItem: Belge içerisinde html elemanına eklenmiş olan özellik node'u referansını elde etmek için kullanılır.
+function getNamedItemSimpleFunction() {
+    var process = document.getElementsByName("attributesgetNamedItem")[0];
+    var result = process.attributes.getNamedItem("id").value;
+    document.getElementById("sAttgetNamedItem").innerHTML = result;
+};
 export {
     lengthSimpleFunction,
     nameSimpleFunction,
     valueSimpleFunction,
-    specifiedSimpleFunction
+    specifiedSimpleFunction,
+    getNamedItemSimpleFunction
 };

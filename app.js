@@ -177,3 +177,7 @@ const specified_example = document.getElementById('bAttSpecified');
 specified_example.addEventListener('click', () => {
     domAttributesModule.specifiedSimpleFunction();
 });
+const getNamedItem_example = document.getElementById('bAttgetNamedItem');
+getNamedItem_example.addEventListener('click', () => {
+    domAttributesModule.getNamedItemSimpleFunction();
+});
