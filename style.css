@@ -5,13 +5,13 @@
     padding: 5px;
 }
 
-.features {
+.domDocument {
     border: 1px solid black;
     padding: 5px;
     align-items: center;
 }
 
-.features b:hover {
+.domDocument b:hover {
     cursor: pointer;
     color: red;
 }

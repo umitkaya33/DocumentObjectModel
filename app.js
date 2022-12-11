@@ -1,5 +1,11 @@
 import * as  domDocumentModule from "./modules/dom-Document-Module.js";
 import * as domAttributesModule from "./modules/dom-Attributes-Module.js";
+import * as domElementsModule from "./modules/dom-Elements-Module.js";
+
+const testModule = document.getElementById('btnTest');
+testModule.addEventListener('click', () => {
+    domElementsModule.domElementsTestFunctionSimple();
+});
 
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
