@@ -8,11 +8,16 @@ function accesskeyFunctionSimple() {
     var process = redBG + " " + blackBG + " " + blueBG + " " + greenBG + " " + whiteBG;
     document.getElementById("sAccessKey").innerHTML = "ATANAN DEGERLER: ALT + " + "(" + process + ")";
 };
-//! Focus:  Belge içerisindeki herhangi bir html elemanına odaklanmak kullanılır.
+//! Focus():  Belge içerisindeki herhangi bir html elemanına odaklanmak kullanılır.
 function focusFunctionSimple() {
     document.getElementById("sFocus").focus();
 };
+//! blur():  Belge içerisinde odaklanılmış herhangi bir html elemanının odağından çıkmak için kullanılır.
+function blurFunctionSimple() {
+    document.getElementById("sFocus").blur();
+};
 export {
     accesskeyFunctionSimple,
-    focusFunctionSimple
+    focusFunctionSimple,
+    blurFunctionSimple
 };

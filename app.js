@@ -10,6 +10,10 @@ const focusModule = document.getElementById('bFocus');
 focusModule.addEventListener('click', () => {
     domElementsModule.focusFunctionSimple();
 });
+const blurModule = document.getElementById('bBlur');
+blurModule.addEventListener('click', () => {
+    domElementsModule.blurFunctionSimple();
+});
 
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
