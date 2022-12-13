@@ -26,3 +26,14 @@
     cursor: pointer;
     color: darkred;
 }
+
+.domElement {
+    border: 1px solid darkred;
+    padding: 5px;
+    align-items: center;
+}
+
+.domElement b:hover {
+    cursor: pointer;
+    color: darkred;
+}

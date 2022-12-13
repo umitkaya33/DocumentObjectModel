@@ -10,15 +10,24 @@
 </head>
 
 <body>
+    <!--! Dom Elements Alanı -->
+    <div class="domElement">
+        <table>
+            <tr>
+                <td><b id="bAcsessKey">AcsessKey:</b></td>
+                <td><span id="sAccessKey"></span></td>
+            </tr>
+        </table>
+    </div>
     <!--! Dom Document Alanı -->
     <div class="ustkisim">
         <button id="btnDomModule">Değiştir</button>
         <div id="demo">ÜSTEKİ BUTONA TIKLANINCA BURDAKİ YAZI DEĞİŞECEK</div> <br>
-        <button id="btnRedBG">KIRMIZI</button>
-        <button id="btnBlackBG">SİYAH</button>
-        <button id="btnBlueBG">MAVİ</button>
-        <button id="btnGreenBG">YEŞİL</button>
-        <button id="btnWhiteBG">BEYAZ</button><br /><br />
+        <button id="btnRedBG" accesskey="1">KIRMIZI</button>
+        <button id="btnBlackBG" accesskey="2">SİYAH</button>
+        <button id="btnBlueBG" accesskey="3">MAVİ</button>
+        <button id="btnGreenBG" accesskey="4">YEŞİL</button>
+        <button id="btnWhiteBG" accesskey="5">BEYAZ</button><br /><br />
     </div>
     <div class="ilgiAlanlari">
         İlgi Alanlarınız. <br />
@@ -216,10 +225,7 @@
             </tr>
         </table>
     </div>
-    <!--! Dom Elements Alanı -->
-    <div class="domElements">
-        <button id="btnTest">TEST BUTONU</button>
-    </div>
+
     <!--! Alt Alan -->
     <div class="altalan">
         <button id="btnLocation">Başa Dön</button>
