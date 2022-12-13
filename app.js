@@ -6,6 +6,10 @@ const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {
     domElementsModule.accesskeyFunctionSimple();
 });
+const focusModule = document.getElementById('bFocus');
+focusModule.addEventListener('click', () => {
+    domElementsModule.focusFunctionSimple();
+});
 
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
