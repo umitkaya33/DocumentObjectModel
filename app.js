@@ -14,6 +14,10 @@ const blurModule = document.getElementById('bBlur');
 blurModule.addEventListener('click', () => {
     domElementsModule.blurFunctionSimple();
 });
+const classListModule = document.getElementById('bClassList');
+classListModule.addEventListener('click', () => {
+    domElementsModule.classListFunctionSimple();
+});
 
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {

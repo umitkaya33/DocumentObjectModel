@@ -5,7 +5,7 @@ function accesskeyFunctionSimple() {
     var blueBG = document.getElementById("btnBlueBG").accessKey = "3";
     var greenBG = document.getElementById("btnGreenBG").accessKey = "4";
     var whiteBG = document.getElementById("btnWhiteBG").accessKey = "5";
-    var process = redBG + " " + blackBG + " " + blueBG + " " + greenBG + " " + whiteBG;
+    var process = redBG + "," + blackBG + "," + blueBG + "," + greenBG + "," + whiteBG;
     document.getElementById("sAccessKey").innerHTML = "ATANAN DEGERLER: ALT + " + "(" + process + ")";
 };
 //! Focus():  Belge içerisindeki herhangi bir html elemanına odaklanmak kullanılır.
@@ -16,8 +16,13 @@ function focusFunctionSimple() {
 function blurFunctionSimple() {
     document.getElementById("sFocus").blur();
 };
+//! classList:  Belge içerisinde herhangi bir html elemanına atanmış olan class özelliklerini elde etmek veya ayarlamak için kullanılır .
+function classListFunctionSimple() {
+    document.getElementById("domElement").classList.toggle("domElementAdd");
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
-    blurFunctionSimple
+    blurFunctionSimple,
+    classListFunctionSimple
 };

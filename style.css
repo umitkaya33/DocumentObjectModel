@@ -37,3 +37,8 @@
     cursor: pointer;
     color: darkred;
 }
+ .domElementAdd{
+    background-color: black;
+    font-size: 16px;
+    color: aqua;
+}
