@@ -20,9 +20,20 @@ function blurFunctionSimple() {
 function classListFunctionSimple() {
     document.getElementById("domElement").classList.toggle("domElementAdd");
 };
+//! children:  Belge içerisinde herhangi bir html elemanın içerdiği alt elemanları elde etmek için kullanılır .
+function childrenFunctionSimple() {
+    var area = document.getElementById("domElement").children;
+    var areaLength = area.length;
+    var childrenView = "";
+    for (let index = 0; index < areaLength; index++) {
+        childrenView = childrenView + area[index].tagName;
+    }
+    document.getElementById("sChildren").innerHTML = childrenView;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
     blurFunctionSimple,
-    classListFunctionSimple
+    classListFunctionSimple,
+    childrenFunctionSimple
 };

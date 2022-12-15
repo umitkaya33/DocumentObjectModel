@@ -18,7 +18,12 @@ const classListModule = document.getElementById('bClassList');
 classListModule.addEventListener('click', () => {
     domElementsModule.classListFunctionSimple();
 });
+const childrenModule = document.getElementById('bChildren');
+childrenModule.addEventListener('click', () => {
+    domElementsModule.childrenFunctionSimple();
+});
 
+/*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
     domDocumentModule.get_SimpleFunction();
@@ -211,3 +216,4 @@ const item_example = document.getElementById('bAttItem');
 item_example.addEventListener('click', () => {
     domAttributesModule.itemSimpleFunction();
 });
+*/
