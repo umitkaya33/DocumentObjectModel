@@ -30,10 +30,21 @@ function childrenFunctionSimple() {
     }
     document.getElementById("sChildren").innerHTML = childrenView;
 };
+//! childNodes:  Belge içerisinde herhangi bir html elemanın içerdiği alt nodeları elde etmek için kullanılır .
+function childNodesFunctionSimple() {
+    var area = document.getElementById("domElement").childNodes;
+    var areaLength = area.length;
+    var childrenView = "";
+    for (let index = 0; index < areaLength; index++) {
+        childrenView = childrenView + area[index].nodeName;
+    }
+    document.getElementById("sChildNodes").innerHTML = childrenView;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
     blurFunctionSimple,
     classListFunctionSimple,
-    childrenFunctionSimple
+    childrenFunctionSimple,
+    childNodesFunctionSimple
 };
