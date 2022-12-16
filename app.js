@@ -26,7 +26,10 @@ const childNodesModule = document.getElementById('bChildNodes');
 childNodesModule.addEventListener('click', () => {
     domElementsModule.childNodesFunctionSimple();
 });
-
+const firstElementChildModule = document.getElementById('bFirstElementChild');
+firstElementChildModule.addEventListener('click', () => {
+    domElementsModule.firstElementChildFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {

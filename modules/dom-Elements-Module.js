@@ -40,11 +40,17 @@ function childNodesFunctionSimple() {
     }
     document.getElementById("sChildNodes").innerHTML = childrenView;
 };
+//! FirstElementChild:  Belge içerisinde herhangi bir html elemanın içerdiği ilk elemanı elde etmek için kullanılır .
+function firstElementChildFunctionSimple() {
+    var value = document.getElementById("domElement").firstElementChild.tagName
+    document.getElementById("sFirstElementChild").innerHTML = value;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
     blurFunctionSimple,
     classListFunctionSimple,
     childrenFunctionSimple,
-    childNodesFunctionSimple
+    childNodesFunctionSimple,
+    firstElementChildFunctionSimple
 };
