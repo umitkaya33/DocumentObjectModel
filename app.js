@@ -30,6 +30,10 @@ const firstElementChildModule = document.getElementById('bFirstElementChild');
 firstElementChildModule.addEventListener('click', () => {
     domElementsModule.firstElementChildFunctionSimple();
 });
+const firstChildModule = document.getElementById('bFirstChild');
+firstChildModule.addEventListener('click', () => {
+    domElementsModule.firstChildFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {

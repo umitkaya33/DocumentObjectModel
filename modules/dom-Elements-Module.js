@@ -45,6 +45,11 @@ function firstElementChildFunctionSimple() {
     var value = document.getElementById("domElement").firstElementChild.tagName
     document.getElementById("sFirstElementChild").innerHTML = value;
 };
+//! FirstChild:  Belge içerisinde herhangi bir html elemanın içerdiği ilk alt node'u elde etmek için kullanılır .
+function firstChildFunctionSimple() {
+    var value = document.getElementById("domElement").firstChild;
+    document.getElementById("sFirstChild").innerHTML = value;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
@@ -52,5 +57,6 @@ export {
     classListFunctionSimple,
     childrenFunctionSimple,
     childNodesFunctionSimple,
-    firstElementChildFunctionSimple
+    firstElementChildFunctionSimple,
+    firstChildFunctionSimple
 };
