@@ -65,6 +65,11 @@ function nextElementSiblingFunctionSimple() {
     var value = document.getElementById("domElement").nextElementSibling.className;
     document.getElementById("sNextElementSibling").innerHTML = value;
 };
+//! nextSibling:  Belge içerisinde herhangi bir html elemanın içersindeki aynı seviyede olan nodelardan belirtilecek olan düğümden sonra gelen ilk düğümü elde etmek için kullanılır .
+function nextSiblingFunctionSimple() {
+    var value = document.getElementById("domElement").nextSibling;
+    document.getElementById("sNextSibling").innerHTML = value;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
@@ -76,5 +81,6 @@ export {
     firstChildFunctionSimple,
     lastElementChildFunctionSimple,
     lastChildFunctionSimple,
-    nextElementSiblingFunctionSimple
+    nextElementSiblingFunctionSimple,
+    nextSiblingFunctionSimple
 };

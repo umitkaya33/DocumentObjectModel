@@ -46,6 +46,10 @@ const nextElementSiblingModule = document.getElementById('bNextElementSibling');
 nextElementSiblingModule.addEventListener('click', () => {
     domElementsModule.nextElementSiblingFunctionSimple();
 });
+const nextSiblingModule = document.getElementById('bNextSibling');
+nextSiblingModule.addEventListener('click', () => {
+    domElementsModule.nextSiblingFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
