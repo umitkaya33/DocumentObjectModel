@@ -34,6 +34,10 @@ const firstChildModule = document.getElementById('bFirstChild');
 firstChildModule.addEventListener('click', () => {
     domElementsModule.firstChildFunctionSimple();
 });
+const lastElementChildModule = document.getElementById('bLastElementChild');
+lastElementChildModule.addEventListener('click', () => {
+    domElementsModule.lastChildFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {

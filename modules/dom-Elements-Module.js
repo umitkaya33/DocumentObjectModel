@@ -50,6 +50,11 @@ function firstChildFunctionSimple() {
     var value = document.getElementById("domElement").firstChild;
     document.getElementById("sFirstChild").innerHTML = value;
 };
+//! LastElementChild:  Belge içerisinde herhangi bir html elemanın içerdiği son elemanı elde etmek için kullanılır .
+function lastChildFunctionSimple() {
+    var value = document.getElementById("domElement").lastElementChild.tagName;
+    document.getElementById("sLastElementChild").innerHTML = value;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
@@ -58,5 +63,6 @@ export {
     childrenFunctionSimple,
     childNodesFunctionSimple,
     firstElementChildFunctionSimple,
-    firstChildFunctionSimple
+    firstChildFunctionSimple,
+    lastChildFunctionSimple
 };
