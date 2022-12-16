@@ -51,9 +51,14 @@ function firstChildFunctionSimple() {
     document.getElementById("sFirstChild").innerHTML = value;
 };
 //! LastElementChild:  Belge içerisinde herhangi bir html elemanın içerdiği son elemanı elde etmek için kullanılır .
-function lastChildFunctionSimple() {
+function lastElementChildFunctionSimple() {
     var value = document.getElementById("domElement").lastElementChild.tagName;
     document.getElementById("sLastElementChild").innerHTML = value;
+};
+//! LastChild:  Belge içerisinde herhangi bir html elemanın içerdiği son alt node'u elde etmek için kullanılır .
+function lastChildFunctionSimple() {
+    var value = document.getElementById("domElement").lastChild;
+    document.getElementById("sLastChild").innerHTML = value;
 };
 export {
     accesskeyFunctionSimple,
@@ -64,5 +69,6 @@ export {
     childNodesFunctionSimple,
     firstElementChildFunctionSimple,
     firstChildFunctionSimple,
+    lastElementChildFunctionSimple,
     lastChildFunctionSimple
 };
