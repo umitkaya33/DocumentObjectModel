@@ -11,69 +11,135 @@
 
 <body>
     <!--! Dom Elements Alanı -->
-    <div class="domElement" id="domElement">
+    <div id="domElement" class="domElement">
         <table>
             <tr>
-                <td><b id="bAcsessKey">AcsessKey:</b></td>
-                <td><span id="sAccessKey"></span></td>
-            </tr>
-            <tr>
-                <td><b id="bFocus">Focus:</b></td>
-                <td><span id="sFocus" contenteditable="true">Buraya Odaklan</span></td>
-            </tr>
-            <tr>
-                <td><b id="bBlur">Blur:</b></td>
-                <td><span id="sBlur"> Focus Odagindan Cik</span></td>
-            </tr>
-            <tr>
-                <td><b id="bClassList">ClassList:</b></td>
-                <td><span id="sClassList">DIV Alaninin Style Ozelligini aktiflestir & Kaldir</span></td>
-            </tr>
-            <tr>
-                <td><b id="bChildren">Children:</b></td>
-                <td><span id="sChildren">DIV Alanının çocuk elemanı</span></td>
-            </tr>
-            <tr>
-                <td><b id="bChildNodes">ChildNodes:</b></td>
-                <td><span id="sChildNodes">DIV Alanının çocuk elemanlarının açıklaması</span></td>
-            </tr>
-            <tr>
-                <td><b id="bFirstElementChild">FirstElementChild:</b></td>
-                <td><span id="sFirstElementChild"></span></td>
-            </tr>
-            <tr>
-                <td><b id="bFirstChild">FirstChild:</b></td>
-                <td><span id="sFirstChild"></span></td>
-            </tr>
-            <tr>
-                <td><b id="bLastElementChild">LastElementChild:</b></td>
-                <td><span id="sLastElementChild"></span></td>
-            </tr>
-            <tr>
-                <td><b id="bLastChild">LastChild:</b></td>
-                <td><span id="sLastChild"></span></td>
-            </tr>
-            <tr>
-                <td><b id="bNextElementSibling">NextElementSibling:</b></td>
-                <td><span id="sNextElementSibling">DIV alanından sonraki div alanı Class adı</span></td>
-            </tr>
-            <tr>
-                <td><b id="bNextSibling">NextSibling:</b></td>
-                <td><span id="sNextSibling">DIV alanından sonraki div alanı Class özelliği</span></td>
-            </tr>
-            <tr>
-                <td><b id="bPreviousElementSibling">PreviousElementSibling:</b></td>
-                <td><span id="sPreviousElementSibling">Sonraki div alanı referans alınarak bu div alanına özellik
-                        tanımlama</span></td>
-            </tr>
-            <tr>
-                <td><b id="bPreviousSibling">PreviousSibling:</b></td>
-                <td><span id="sPreviousSibling">Sonraki div alanı referans alınarak bu div alanının özelliği</span>
+                <td>
+                    <b id="bAcsessKey">AcsessKey:</b>
+                </td>
+                <td>
+                    <span id="sAccessKey"></span>
                 </td>
             </tr>
             <tr>
-                <td><b id="bOffsetParent">OffsetParent:</b></td>
-                <td><span id="sOffsetParent">DIV alanının mutlak konumlandırıldığı eleman</span>
+                <td>
+                    <b id="bFocus">Focus:</b>
+                </td>
+                <td>
+                    <span id="sFocus" contenteditable="true">Buraya Odaklan</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bBlur">Blur:</b>
+                </td>
+                <td>
+                    <span id="sBlur"> Focus Odagindan Cik</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bClassList">ClassList:</b>
+                </td>
+                <td>
+                    <span id="sClassList">DIV Alaninin Style Ozelligini aktiflestir & Kaldir</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bChildren">Children:</b>
+                </td>
+                <td>
+                    <span id="sChildren">DIV Alanının çocuk elemanı</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bChildNodes">ChildNodes:</b>
+                </td>
+                <td>
+                    <span id="sChildNodes">DIV Alanının çocuk elemanlarının açıklaması</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bFirstElementChild">FirstElementChild:</b>
+                </td>
+                <td>
+                    <span id="sFirstElementChild"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bFirstChild">FirstChild:</b>
+                </td>
+                <td>
+                    <span id="sFirstChild"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bLastElementChild">LastElementChild:</b>
+                </td>
+                <td>
+                    <span id="sLastElementChild"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bLastChild">LastChild:</b>
+                </td>
+                <td>
+                    <span id="sLastChild"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bNextElementSibling">NextElementSibling:</b>
+                </td>
+                <td>
+                    <span id="sNextElementSibling">DIV alanından sonraki div alanı Class adı</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bNextSibling">NextSibling:</b>
+                </td>
+                <td>
+                    <span id="sNextSibling">DIV alanından sonraki div alanı Class özelliği</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bPreviousElementSibling">PreviousElementSibling:</b>
+                </td>
+                <td>
+                    <span id="sPreviousElementSibling">Sonraki div alanı referans alınarak bu div alanına özellik
+                        tanımlama</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bPreviousSibling">PreviousSibling:</b>
+                </td>
+                <td>
+                    <span id="sPreviousSibling">Sonraki div alanı referans alınarak bu div alanının özelliği</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bOffsetParent">OffsetParent:</b>
+                </td>
+                <td>
+                    <span id="sOffsetParent">DIV alanının mutlak konumlandırıldığı eleman</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b id="bContains">Contains:</b>
+                </td>
+                <td>
+                    <span id="sContains">DIV Alanının alt düğümü mü ?</span>
                 </td>
             </tr>
         </table>

@@ -62,6 +62,10 @@ const offsetParentModule = document.getElementById('bOffsetParent');
 offsetParentModule.addEventListener('click', () => {
     domElementsModule.offsetParentFunctionSimple();
 });
+const containsModule = document.getElementById('bContains');
+containsModule.addEventListener('click', () => {
+    domElementsModule.containsFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {

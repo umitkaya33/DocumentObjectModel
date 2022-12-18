@@ -79,10 +79,16 @@ function previousSiblingFunctionSimple() {
     var value = document.getElementById("ustkisim").previousSibling;
     document.getElementById("sPreviousSibling").innerHTML = value;
 };
-//! offsetParent:  Belge içerisindeki herhangi bir html elemanın içerisinde mutlak olarak konumlandırıldığı ilk elemanın referans nesnesini elde etmek iin kullanılır aynı seviyede olan nodelardan belirtilecek olan düğümden önce gelen ilk düğümü elde etmek için kullanılır .
+//! offsetParent:  Belge içerisindeki herhangi bir html elemanın içerisinde mutlak olarak konumlandırıldığı ilk elemanın referans nesnesini elde etmek iin kullanılır.
 function offsetParentFunctionSimple() {
     var value = document.getElementById("domElement").offsetParent;
     document.getElementById("sOffsetParent").innerHTML = value;
+};
+//! contains():  Belge içerisindeki herhangi bir node'un başka bir düğümün alt düğümü olup olmadığını kontrol ederek sonucu Boolean veri türünde döndürür.
+function containsFunctionSimple() {
+    var value = document.getElementById("domElement");
+    var process = document.getElementById("bContains").contains(value);
+    document.getElementById("sContains").innerHTML = process;
 };
 export {
     accesskeyFunctionSimple,
@@ -99,5 +105,6 @@ export {
     nextSiblingFunctionSimple,
     previousElementSiblingFunctionSimple,
     previousSiblingFunctionSimple,
-    offsetParentFunctionSimple
+    offsetParentFunctionSimple,
+    containsFunctionSimple
 };
