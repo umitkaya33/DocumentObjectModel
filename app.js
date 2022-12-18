@@ -54,6 +54,10 @@ const PreviousElementSiblingModule = document.getElementById('bPreviousElementSi
 PreviousElementSiblingModule.addEventListener('click', () => {
     domElementsModule.previousElementSiblingFunctionSimple();
 });
+const PreviousSiblingModule = document.getElementById('bPreviousSibling');
+PreviousSiblingModule.addEventListener('click', () => {
+    domElementsModule.previousSiblingFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {

@@ -70,9 +70,14 @@ function nextSiblingFunctionSimple() {
     var value = document.getElementById("domElement").nextSibling;
     document.getElementById("sNextSibling").innerHTML = value;
 };
-//! nextElementSibling:  Belge içerisinde herhangi bir html elemanın içersindeki aynı seviyede olan elemanlardan belirtilecek olan elemandan önce gelecek ilk elemanı elde etmek için kullanılır .
+//! previousElementSibling:  Belge içerisinde herhangi bir html elemanın içersindeki aynı seviyede olan elemanlardan belirtilecek olan elemandan önce gelecek ilk elemanı elde etmek için kullanılır .
 function previousElementSiblingFunctionSimple() {
-    document.getElementById("ustkisim").previousElementSibling.style.backgroundColor="grey";
+    document.getElementById("ustkisim").previousElementSibling.style.backgroundColor = "grey";
+};
+//! previousSibling:  Belge içerisinde herhangi bir html elemanın içersindeki aynı seviyede olan nodelardan belirtilecek olan düğümden önce gelen ilk düğümü elde etmek için kullanılır .
+function previousSiblingFunctionSimple() {
+    var value = document.getElementById("ustkisim").previousSibling;
+    document.getElementById("sPreviousSibling").innerHTML = value;
 };
 export {
     accesskeyFunctionSimple,
@@ -87,5 +92,6 @@ export {
     lastChildFunctionSimple,
     nextElementSiblingFunctionSimple,
     nextSiblingFunctionSimple,
-    previousElementSiblingFunctionSimple
+    previousElementSiblingFunctionSimple,
+    previousSiblingFunctionSimple
 };
