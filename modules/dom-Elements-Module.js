@@ -95,6 +95,13 @@ function textContentFunctionSimple() {
     var value = document.getElementById("bTextContent").textContent;
     document.getElementById("sTextContent").innerHTML = value;
 };
+//! compareDocumentPosition():  Belge içerisinde bulunan node'ların konum değerlerini elde etmek için kullanılır.
+function compareDocumentPositionFunctionSimple() {
+    var value = document.getElementById("domElement");
+    var value2 = document.getElementById("bCompareDocumentPosition");
+    var process = value.compareDocumentPosition(value2);
+    document.getElementById("sCompareDocumentPosition").innerHTML = process;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
@@ -112,5 +119,6 @@ export {
     previousSiblingFunctionSimple,
     offsetParentFunctionSimple,
     containsFunctionSimple,
-    textContentFunctionSimple
+    textContentFunctionSimple,
+    compareDocumentPositionFunctionSimple
 };

@@ -70,6 +70,10 @@ const textContentModule = document.getElementById('bTextContent');
 textContentModule.addEventListener('click', () => {
     domElementsModule.textContentFunctionSimple();
 });
+const compareDocumentPositionModule = document.getElementById('bCompareDocumentPosition');
+compareDocumentPositionModule.addEventListener('click', () => {
+    domElementsModule.compareDocumentPositionFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
