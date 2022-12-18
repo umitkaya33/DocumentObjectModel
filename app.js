@@ -50,13 +50,17 @@ const nextSiblingModule = document.getElementById('bNextSibling');
 nextSiblingModule.addEventListener('click', () => {
     domElementsModule.nextSiblingFunctionSimple();
 });
-const PreviousElementSiblingModule = document.getElementById('bPreviousElementSibling');
-PreviousElementSiblingModule.addEventListener('click', () => {
+const previousElementSiblingModule = document.getElementById('bPreviousElementSibling');
+previousElementSiblingModule.addEventListener('click', () => {
     domElementsModule.previousElementSiblingFunctionSimple();
 });
-const PreviousSiblingModule = document.getElementById('bPreviousSibling');
-PreviousSiblingModule.addEventListener('click', () => {
+const previousSiblingModule = document.getElementById('bPreviousSibling');
+previousSiblingModule.addEventListener('click', () => {
     domElementsModule.previousSiblingFunctionSimple();
+});
+const offsetParentModule = document.getElementById('bOffsetParent');
+offsetParentModule.addEventListener('click', () => {
+    domElementsModule.offsetParentFunctionSimple();
 });
 /*
 const btnDomModule = document.getElementById('btnDomModule');

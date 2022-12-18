@@ -79,6 +79,11 @@ function previousSiblingFunctionSimple() {
     var value = document.getElementById("ustkisim").previousSibling;
     document.getElementById("sPreviousSibling").innerHTML = value;
 };
+//! offsetParent:  Belge içerisindeki herhangi bir html elemanın içerisinde mutlak olarak konumlandırıldığı ilk elemanın referans nesnesini elde etmek iin kullanılır aynı seviyede olan nodelardan belirtilecek olan düğümden önce gelen ilk düğümü elde etmek için kullanılır .
+function offsetParentFunctionSimple() {
+    var value = document.getElementById("domElement").offsetParent;
+    document.getElementById("sOffsetParent").innerHTML = value;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
@@ -93,5 +98,6 @@ export {
     nextElementSiblingFunctionSimple,
     nextSiblingFunctionSimple,
     previousElementSiblingFunctionSimple,
-    previousSiblingFunctionSimple
+    previousSiblingFunctionSimple,
+    offsetParentFunctionSimple
 };
