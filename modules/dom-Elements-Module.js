@@ -70,6 +70,10 @@ function nextSiblingFunctionSimple() {
     var value = document.getElementById("domElement").nextSibling;
     document.getElementById("sNextSibling").innerHTML = value;
 };
+//! nextElementSibling:  Belge içerisinde herhangi bir html elemanın içersindeki aynı seviyede olan elemanlardan belirtilecek olan elemandan önce gelecek ilk elemanı elde etmek için kullanılır .
+function previousElementSiblingFunctionSimple() {
+    document.getElementById("ustkisim").previousElementSibling.style.backgroundColor="grey";
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
@@ -82,5 +86,6 @@ export {
     lastElementChildFunctionSimple,
     lastChildFunctionSimple,
     nextElementSiblingFunctionSimple,
-    nextSiblingFunctionSimple
+    nextSiblingFunctionSimple,
+    previousElementSiblingFunctionSimple
 };

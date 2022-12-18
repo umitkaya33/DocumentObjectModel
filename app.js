@@ -50,6 +50,10 @@ const nextSiblingModule = document.getElementById('bNextSibling');
 nextSiblingModule.addEventListener('click', () => {
     domElementsModule.nextSiblingFunctionSimple();
 });
+const PreviousElementSiblingModule = document.getElementById('bPreviousElementSibling');
+PreviousElementSiblingModule.addEventListener('click', () => {
+    domElementsModule.previousElementSiblingFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
