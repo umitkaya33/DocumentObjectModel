@@ -90,6 +90,11 @@ function containsFunctionSimple() {
     var process = document.getElementById("bContains").contains(value);
     document.getElementById("sContains").innerHTML = process;
 };
+//! textContent():  Belge içerisindeki herhangi bir node'un metin düğümlerini elde etmek için kullanılır.
+function textContentFunctionSimple() {
+    var value = document.getElementById("bTextContent").textContent;
+    document.getElementById("sTextContent").innerHTML = value;
+};
 export {
     accesskeyFunctionSimple,
     focusFunctionSimple,
@@ -106,5 +111,6 @@ export {
     previousElementSiblingFunctionSimple,
     previousSiblingFunctionSimple,
     offsetParentFunctionSimple,
-    containsFunctionSimple
+    containsFunctionSimple,
+    textContentFunctionSimple
 };

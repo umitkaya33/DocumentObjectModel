@@ -66,6 +66,10 @@ const containsModule = document.getElementById('bContains');
 containsModule.addEventListener('click', () => {
     domElementsModule.containsFunctionSimple();
 });
+const textContentModule = document.getElementById('bTextContent');
+textContentModule.addEventListener('click', () => {
+    domElementsModule.textContentFunctionSimple();
+});
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
