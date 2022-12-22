@@ -29,6 +29,10 @@ onMouseOutModule.addEventListener('mouseover',()=>{
 onMouseOutModule.addEventListener('mouseout',()=>{
     domEventsModule.onMouseOutFunctionSimple();
 });
+const onMouseEnterModule = document.getElementById('btnMouseEnter');
+onMouseEnterModule.addEventListener('mouseenter',()=>{
+    domEventsModule.onMouseEnterFunctionSimple();
+});
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {

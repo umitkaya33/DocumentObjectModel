@@ -22,11 +22,17 @@ function onMouseOverFunctionSimple() {
 function onMouseOutFunctionSimple() {
     document.getElementById("domEventsResult").innerHTML = "Buton üzerinden gidildi";
 };
+//! OnMouseEnter : Belge içersindeki herhangi bir elemanın mouse ile kapsama alanına giriş yapıldığında belirtilecek olan fonksiyonun çalışması 
+function onMouseEnterFunctionSimple() {
+    document.getElementById("domEvents").classList.add("domEventsAdd");
+    document.getElementById("domEventsResult").innerHTML = "Mouse Enter özelliği aktif oldu";
+    };
 export {
     ocClickFunctionSimple,
     ocdblClickFunctionSimple,
     onMouseDownFunctionSimple,
     onContextMenuFunctionSimple,
     onMouseOverFunctionSimple,
-    onMouseOutFunctionSimple
+    onMouseOutFunctionSimple,
+    onMouseEnterFunctionSimple
 };
