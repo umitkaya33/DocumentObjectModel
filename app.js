@@ -18,6 +18,10 @@ const onContextMenuModule = document.getElementById('btnContextMenu');
 onContextMenuModule.addEventListener('contextmenu',()=>{
     domEventsModule.onContextMenuFunctionSimple();
 });
+const onMouseOverModule = document.getElementById('btnMouseOver');
+onMouseOverModule.addEventListener('mouseover',()=>{
+    domEventsModule.onMouseOverFunctionSimple();
+});
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {
