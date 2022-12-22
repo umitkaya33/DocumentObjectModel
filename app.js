@@ -6,6 +6,10 @@ const onclickModule = document.getElementById('btnOnClick');
 onclickModule.addEventListener('click',()=>{
     domEventsModule.ocClickFunctionSimple();
 });
+const ondblclickModule = document.getElementById('btnOndblClick');
+ondblclickModule.addEventListener('dblclick',()=>{
+    domEventsModule.ocdblClickFunctionSimple();
+});
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {
