@@ -10,6 +10,10 @@ const ondblclickModule = document.getElementById('btnOndblClick');
 ondblclickModule.addEventListener('dblclick',()=>{
     domEventsModule.ocdblClickFunctionSimple();
 });
+const onMouseDownModule = document.getElementById('btnOnMouseDown');
+onMouseDownModule.addEventListener('mousedown',()=>{
+    domEventsModule.onMouseDownFunctionSimple();
+});
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {
