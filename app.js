@@ -22,6 +22,13 @@ const onMouseOverModule = document.getElementById('btnMouseOver');
 onMouseOverModule.addEventListener('mouseover',()=>{
     domEventsModule.onMouseOverFunctionSimple();
 });
+const onMouseOutModule = document.getElementById('btnMouseOut');
+onMouseOutModule.addEventListener('mouseover',()=>{
+    domEventsModule.onMouseOverFunctionSimple();
+});
+onMouseOutModule.addEventListener('mouseout',()=>{
+    domEventsModule.onMouseOutFunctionSimple();
+});
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {
