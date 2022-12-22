@@ -14,9 +14,14 @@ function onMouseDownFunctionSimple() {
 function onContextMenuFunctionSimple() {
     document.getElementById("domEventsResult").innerHTML = "Sağ tıklama işlemi gerçekleşti";
 };
+//! OnMouseOver : Belge içersindeki herhangi bir elemana mouse ile üzerine gelindiğinde belirtilecek olan fonksiyonun çalışması 
+function onMouseOverFunctionSimple() {
+    document.getElementById("domEventsResult").innerHTML = "Buton üzerine gelindi";
+};
 export {
     ocClickFunctionSimple,
     ocdblClickFunctionSimple,
     onMouseDownFunctionSimple,
-    onContextMenuFunctionSimple
+    onContextMenuFunctionSimple,
+    onMouseOverFunctionSimple
 };
