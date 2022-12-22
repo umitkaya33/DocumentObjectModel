@@ -3,35 +3,42 @@ import * as domAttributesModule from "./modules/dom-Attributes-Module.js";
 import * as domElementsModule from "./modules/dom-Elements-Module.js";
 import * as domEventsModule from "./modules/dom-Events-Module.js"
 const onclickModule = document.getElementById('btnOnClick');
-onclickModule.addEventListener('click',()=>{
+onclickModule.addEventListener('click', () => {
     domEventsModule.ocClickFunctionSimple();
 });
 const ondblclickModule = document.getElementById('btnOndblClick');
-ondblclickModule.addEventListener('dblclick',()=>{
+ondblclickModule.addEventListener('dblclick', () => {
     domEventsModule.ocdblClickFunctionSimple();
 });
 const onMouseDownModule = document.getElementById('btnOnMouseDown');
-onMouseDownModule.addEventListener('mousedown',()=>{
+onMouseDownModule.addEventListener('mousedown', () => {
     domEventsModule.onMouseDownFunctionSimple();
 });
 const onContextMenuModule = document.getElementById('btnContextMenu');
-onContextMenuModule.addEventListener('contextmenu',()=>{
+onContextMenuModule.addEventListener('contextmenu', () => {
     domEventsModule.onContextMenuFunctionSimple();
 });
 const onMouseOverModule = document.getElementById('btnMouseOver');
-onMouseOverModule.addEventListener('mouseover',()=>{
+onMouseOverModule.addEventListener('mouseover', () => {
     domEventsModule.onMouseOverFunctionSimple();
 });
 const onMouseOutModule = document.getElementById('btnMouseOut');
-onMouseOutModule.addEventListener('mouseover',()=>{
+onMouseOutModule.addEventListener('mouseover', () => {
     domEventsModule.onMouseOverFunctionSimple();
 });
-onMouseOutModule.addEventListener('mouseout',()=>{
+onMouseOutModule.addEventListener('mouseout', () => {
     domEventsModule.onMouseOutFunctionSimple();
 });
 const onMouseEnterModule = document.getElementById('btnMouseEnter');
-onMouseEnterModule.addEventListener('mouseenter',()=>{
+onMouseEnterModule.addEventListener('mouseenter', () => {
     domEventsModule.onMouseEnterFunctionSimple();
+});
+const onMouseLeaveModule = document.getElementById('btnMouseLeave');
+onMouseLeaveModule.addEventListener('mouseenter', () => {
+    domEventsModule.onMouseEnterFunctionSimple();
+});
+onMouseLeaveModule.addEventListener('mouseleave', () => {
+    domEventsModule.onMouseLeaveFunctionSimple();
 });
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');

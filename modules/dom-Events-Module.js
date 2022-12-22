@@ -26,7 +26,12 @@ function onMouseOutFunctionSimple() {
 function onMouseEnterFunctionSimple() {
     document.getElementById("domEvents").classList.add("domEventsAdd");
     document.getElementById("domEventsResult").innerHTML = "Mouse Enter özelliği aktif oldu";
-    };
+};
+//! OnMouseLeave : Belge içersindeki herhangi bir elemanın mouse ile kapsama alanında çıkış yapıldığında belirtilecek olan fonksiyonun çalışması 
+function onMouseLeaveFunctionSimple() {
+    document.getElementById("domEvents").classList.remove("domEventsAdd");
+    document.getElementById("domEventsResult").innerHTML = "Mouse Leave özelliği aktif oldu";
+};
 export {
     ocClickFunctionSimple,
     ocdblClickFunctionSimple,
@@ -34,5 +39,6 @@ export {
     onContextMenuFunctionSimple,
     onMouseOverFunctionSimple,
     onMouseOutFunctionSimple,
-    onMouseEnterFunctionSimple
+    onMouseEnterFunctionSimple,
+    onMouseLeaveFunctionSimple
 };
