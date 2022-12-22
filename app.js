@@ -1,7 +1,12 @@
 import * as domDocumentModule from "./modules/dom-Document-Module.js";
 import * as domAttributesModule from "./modules/dom-Attributes-Module.js";
 import * as domElementsModule from "./modules/dom-Elements-Module.js";
-
+import * as domEventsModule from "./modules/dom-Events-Module.js"
+const onclickModule = document.getElementById('btnOnClick');
+onclickModule.addEventListener('click',()=>{
+    domEventsModule.ocClickFunctionSimple();
+});
+/*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {
     domElementsModule.accesskeyFunctionSimple();
@@ -74,6 +79,7 @@ const compareDocumentPositionModule = document.getElementById('bCompareDocumentP
 compareDocumentPositionModule.addEventListener('click', () => {
     domElementsModule.compareDocumentPositionFunctionSimple();
 });
+*/
 /*
 const btnDomModule = document.getElementById('btnDomModule');
 btnDomModule.addEventListener('click', () => {
