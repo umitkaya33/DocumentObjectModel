@@ -14,6 +14,10 @@ const onMouseDownModule = document.getElementById('btnOnMouseDown');
 onMouseDownModule.addEventListener('mousedown',()=>{
     domEventsModule.onMouseDownFunctionSimple();
 });
+const onContextMenuModule = document.getElementById('btnContextMenu');
+onContextMenuModule.addEventListener('contextmenu',()=>{
+    domEventsModule.onContextMenuFunctionSimple();
+});
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {
