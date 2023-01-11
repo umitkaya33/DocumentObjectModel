@@ -44,6 +44,10 @@ const buttonModule = document.getElementById('btnButton');
 buttonModule.addEventListener('mousedown', () => {
     domEventsModule.buttonFunctionSimple();
 });
+const detailModule = document.getElementById('btnDetail');
+detailModule.addEventListener('click', () => {
+    domEventsModule.detailFunctionSimple();
+});
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {

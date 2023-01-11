@@ -32,7 +32,7 @@ function onMouseLeaveFunctionSimple() {
     document.getElementById("domEvents").classList.remove("domEventsAdd");
     document.getElementById("domEventsResult").innerHTML = "Mouse Leave özelliği aktif oldu";
 };
-//! Button : belge içerisinde mouse ile tıklama işlemi yapıldığında tıklama olayı hangi tuşla gerçekleştiyse sonucu gösterir..
+//! Button : Belge içerisinde mouse ile tıklama işlemi yapıldığında tıklama olayı hangi tuşla gerçekleştiyse sonucu gösterir..
 function buttonFunctionSimple() {
     var accessValue = event.button;
     if (accessValue == 0) {
@@ -43,6 +43,11 @@ function buttonFunctionSimple() {
         document.getElementById("domEventsResult").innerHTML = "Mouse'un sağ tuşuna tıklama oldu..";
     }
 };
+//! Detail : Belge içerisinde mouse ile kaç defa tıklama işlemi yapıldını gösterir.
+function detailFunctionSimple() {
+    var process = event.detail;
+    document.getElementById("domEventsResult").innerHTML="Tıklama Sayısı: " + process;
+};
 export {
     ocClickFunctionSimple,
     ocdblClickFunctionSimple,
@@ -52,5 +57,6 @@ export {
     onMouseOutFunctionSimple,
     onMouseEnterFunctionSimple,
     onMouseLeaveFunctionSimple,
-    buttonFunctionSimple
+    buttonFunctionSimple,
+    detailFunctionSimple
 };
