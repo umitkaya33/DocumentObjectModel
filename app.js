@@ -40,6 +40,10 @@ onMouseLeaveModule.addEventListener('mouseenter', () => {
 onMouseLeaveModule.addEventListener('mouseleave', () => {
     domEventsModule.onMouseLeaveFunctionSimple();
 });
+const buttonModule = document.getElementById('btnButton');
+buttonModule.addEventListener('mousedown', () => {
+    domEventsModule.buttonFunctionSimple();
+});
 /*
 const accessKeyModule = document.getElementById('bAcsessKey');
 accessKeyModule.addEventListener('click', () => {
